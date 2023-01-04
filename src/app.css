@@ -1,0 +1,33 @@
+:root {
+	--color-text: red;
+	--color-bg: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-text: #ccc;
+		--color-bg: #333;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-text: #331;
+		--color-bg: #ccc;
+	}
+}
+
+.dark {
+	--color-text: #ccc;
+	--color-bg: #333;
+}
+
+.light {
+	--color-text: #333;
+	--color-bg: #ccc;
+}
+
+body {
+	background: var(--color-bg);
+	color: var(--color-text);
+}
